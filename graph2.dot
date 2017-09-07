@@ -1,0 +1,36 @@
+graph Ontology {
+		operator [ color="red"];
+		robot [ color="blue"];
+		requirements [ color="green"];
+		environment [ color="orange"];
+		mouse -- hands_on [ label ="requires"];
+		mouse -- desk [ label ="requires"];
+		mouse -- analog_input [ label ="provides"];
+		mouse -- modality [ label ="is"];
+		keyboard -- hands_on [ label ="requires"];
+		keyboard -- modality [ label ="is"];
+		keyboard -- desk [ label ="requires"];
+		operator -- mouse [ label ="has"];
+		operator -- keyboard [ label ="has"];
+		operator -- glove [ label ="has"];
+		operator -- monitor [ label ="has"];
+		operator -- wearable_display [ label ="has"];
+		glove -- hands_off [ label ="provides"];
+		glove -- dof_6 [ label ="provides"];
+		glove -- modality [ label ="is"];
+		robot -- manipulator [ label ="has"];
+		robot -- GPS [ label ="has"];
+		robot -- camera [ label ="has"];
+		manipulator -- dof_6 [ label ="requires"];
+		manipulator -- display [ label ="requires"];
+		GPS -- position [ label ="provides"];
+		position -- location [ label ="represents"];
+		monitor -- position [ label ="displays"];
+		monitor -- modality [ label ="is"];
+		monitor -- display [ label ="provides"];
+		requirements -- hands_off [ label ="requires"];
+		requirements -- manipulator [ label ="requires"];
+		requirements -- display [ label ="requires"];
+		wearable_display -- hands_off [ label ="provides"];
+		wearable_display -- display [ label ="provides"];
+}0

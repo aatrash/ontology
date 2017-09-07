@@ -1,0 +1,32 @@
+digraph Ontology {
+		operator [ color="red"];
+		robot [ color="blue"];
+		requirements [ color="green"];
+		environment [ color="orange"];
+		operator -> microphone [ label ="has"];
+		operator -> glove [ label ="has"];
+		operator -> keyboard [ label ="has"];
+		operator -> mouse [ label ="has"];
+		operator -> monitor [ label ="has"];
+		operator -> wearable_display [ label ="has"];
+		microphone -> hands_off [ label ="attribute"];
+		glove -> dof6 [ label ="provides"];
+		glove -> analog_input [ label ="provides"];
+		keyboard -> dof6 [ label ="provides"];
+		keyboard -> hands_on [ label ="attribute(5)"];
+		mouse -> analog_input [ label ="provides"];
+		mouse -> hands_on [ label ="attribute"];
+		monitor -> display [ label ="provides"];
+		wearable_display -> hands_off [ label ="attribute"];
+		wearable_display -> display [ label ="provides"];
+		robot -> GPS [ label ="has"];
+		robot -> laser [ label ="has"];
+		robot -> manipulator [ label ="has"];
+		GPS -> position [ label ="provides"];
+		manipulator -> dof6 [ label ="requires"];
+		manipulator -> manipulation [ label ="provides"];
+		localization -> laser [ label ="requires"];
+		localization -> position [ label ="provides"];
+		requirements -> display [ label ="requires"];
+		requirements -> analog_input [ label ="requires"];
+}0

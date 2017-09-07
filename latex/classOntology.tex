@@ -1,0 +1,163 @@
+\hypertarget{classOntology}{\section{\-Ontology \-Class \-Reference}
+\label{classOntology}\index{\-Ontology@{\-Ontology}}
+}
+
+
+{\ttfamily \#include $<$ontology.\-h$>$}
+
+\subsection*{\-Public \-Member \-Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classOntology_a7c32cc412fe76fd5b148f52dd4bc0646}{\hyperlink{classOntology_a7c32cc412fe76fd5b148f52dd4bc0646}{\-Ontology} ()}\label{classOntology_a7c32cc412fe76fd5b148f52dd4bc0646}
+
+\begin{DoxyCompactList}\small\item\em \-Default constructor function. \end{DoxyCompactList}\item 
+\hyperlink{classOntology_af40ff2f6c4d2ca5591cee73a4c2f0931}{\-Ontology} (std\-::string const \&filename)
+\begin{DoxyCompactList}\small\item\em \-Constructor function. \-Reads ontology from a file. \end{DoxyCompactList}\item 
+\hypertarget{classOntology_abb418d4161d0576757eceb3cbb8535ce}{void \hyperlink{classOntology_abb418d4161d0576757eceb3cbb8535ce}{print\-Ontology} ()}\label{classOntology_abb418d4161d0576757eceb3cbb8535ce}
+
+\begin{DoxyCompactList}\small\item\em \-Print out everything in the ontology. \end{DoxyCompactList}\item 
+void \hyperlink{classOntology_aa775c431c8aee17a538923729f4c9983}{\-Add\-Node} (string n\-\_\-name, int n\-\_\-id)
+\begin{DoxyCompactList}\small\item\em \-Add a node to the ontology with name and id. \-Creates the node from the information. \end{DoxyCompactList}\item 
+void \hyperlink{classOntology_a5fadbf06a51d3aff595bcebde5dcca87}{\-Add\-Node} (\hyperlink{classNode}{\-Node} new\-\_\-node)
+\begin{DoxyCompactList}\small\item\em \-Add a node to the ontology. \end{DoxyCompactList}\item 
+void \hyperlink{classOntology_a932660c50241f6016a0d3c4b2d1dc28f}{print\-Dot\-File} (string filename)
+\begin{DoxyCompactList}\small\item\em print the ontology as a dot graphic file format \end{DoxyCompactList}\item 
+void \hyperlink{classOntology_a575da03cda7e74cc55c4eea805e72436}{list\-Interface\-Attributes} (queue$<$ int $>$ modalities)
+\begin{DoxyCompactList}\small\item\em \-Search through the ontology starting at 'start\-\_\-id' and list out the attributes. \end{DoxyCompactList}\item 
+\hypertarget{classOntology_a69ca087e5a24dbab5aa4f95c78ed45da}{bool \hyperlink{classOntology_a69ca087e5a24dbab5aa4f95c78ed45da}{is\-Robot\-Equipment} (\hyperlink{classNode}{\-Node} node)}\label{classOntology_a69ca087e5a24dbab5aa4f95c78ed45da}
+
+\begin{DoxyCompactList}\small\item\em \-Is this current node a piece of robot equipment. \-Originally for older algorithm which was removed. \end{DoxyCompactList}\item 
+\hypertarget{classOntology_a5e103b7d433796b6e93c2e01decf955a}{\hyperlink{classNode}{\-Node} \hyperlink{classOntology_a5e103b7d433796b6e93c2e01decf955a}{get\-Node} (int node\-I\-D)}\label{classOntology_a5e103b7d433796b6e93c2e01decf955a}
+
+\begin{DoxyCompactList}\small\item\em \-Return the node in the ontology with id == node\-I\-D. \end{DoxyCompactList}\item 
+\hypertarget{classOntology_ade0d3212c973d83ea30b17107535e3ee}{int \hyperlink{classOntology_ade0d3212c973d83ea30b17107535e3ee}{get\-Req\-I\-D} ()}\label{classOntology_ade0d3212c973d83ea30b17107535e3ee}
+
+\begin{DoxyCompactList}\small\item\em \-Get the \-I\-D of the requirements node. \end{DoxyCompactList}\item 
+\hypertarget{classOntology_abda256bb621aaf495cc4b691fdcf150f}{\hyperlink{classNode}{\-Node} \hyperlink{classOntology_abda256bb621aaf495cc4b691fdcf150f}{get\-Req\-Node} ()}\label{classOntology_abda256bb621aaf495cc4b691fdcf150f}
+
+\begin{DoxyCompactList}\small\item\em \-Get the requirements node. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{\-Protected \-Member \-Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classOntology_af980f46f938fd78dbfe1f60f091f1833}{void \hyperlink{classOntology_af980f46f938fd78dbfe1f60f091f1833}{add\-Back\-Links} ()}\label{classOntology_af980f46f938fd78dbfe1f60f091f1833}
+
+\begin{DoxyCompactList}\small\item\em \-Add the back links from a node, going back from the child to the parents. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{\-Protected \-Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classOntology_a8c979e0f169e8c791166c1b9317f57fe}{vector$<$ \hyperlink{classNode}{\-Node} $>$ \hyperlink{classOntology_a8c979e0f169e8c791166c1b9317f57fe}{\-Nodes}}\label{classOntology_a8c979e0f169e8c791166c1b9317f57fe}
+
+\begin{DoxyCompactList}\small\item\em \-The list of nodes in the ontology. \end{DoxyCompactList}\item 
+\hypertarget{classOntology_a1a07e715754eb483dd786e66c3a46168}{int \hyperlink{classOntology_a1a07e715754eb483dd786e66c3a46168}{num\-\_\-nodes}}\label{classOntology_a1a07e715754eb483dd786e66c3a46168}
+
+\begin{DoxyCompactList}\small\item\em \-The total number of nodes. \end{DoxyCompactList}\item 
+\hypertarget{classOntology_adbeb2879d35a50128368b9e2fa1f808a}{int \hyperlink{classOntology_adbeb2879d35a50128368b9e2fa1f808a}{requirements\-\_\-node\-\_\-id}}\label{classOntology_adbeb2879d35a50128368b9e2fa1f808a}
+
+\begin{DoxyCompactList}\small\item\em \-I\-D of the requirements node. \end{DoxyCompactList}\item 
+\hypertarget{classOntology_a9e3ff741a3feb41bf4b1e48efad367b0}{int \hyperlink{classOntology_a9e3ff741a3feb41bf4b1e48efad367b0}{operator\-\_\-node\-\_\-id}}\label{classOntology_a9e3ff741a3feb41bf4b1e48efad367b0}
+
+\begin{DoxyCompactList}\small\item\em \-I\-D of the operator node. \end{DoxyCompactList}\item 
+\hypertarget{classOntology_a0fcb8725935b37ae5f261c105f3396a1}{int \hyperlink{classOntology_a0fcb8725935b37ae5f261c105f3396a1}{robot\-\_\-node\-\_\-id}}\label{classOntology_a0fcb8725935b37ae5f261c105f3396a1}
+
+\begin{DoxyCompactList}\small\item\em \-I\-D of the robot node. \end{DoxyCompactList}\item 
+\hypertarget{classOntology_aca98de1bd7f9b05fdd2633a7dd3d17e2}{int \hyperlink{classOntology_aca98de1bd7f9b05fdd2633a7dd3d17e2}{environment\-\_\-node\-\_\-id}}\label{classOntology_aca98de1bd7f9b05fdd2633a7dd3d17e2}
+
+\begin{DoxyCompactList}\small\item\em \-I\-D of the environment node. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{\-Detailed \-Description}
+\-The ontology is a network of nodes connected by links that captures the information about all the potential modalities, resources, and information available. \-The ontology contains all possible available information, which is then searched to find a subset (or interface) which meets the requirements. 
+
+\subsection{\-Constructor \& \-Destructor \-Documentation}
+\hypertarget{classOntology_af40ff2f6c4d2ca5591cee73a4c2f0931}{\index{\-Ontology@{\-Ontology}!\-Ontology@{\-Ontology}}
+\index{\-Ontology@{\-Ontology}!Ontology@{\-Ontology}}
+\subsubsection[{\-Ontology}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-Ontology\-::\-Ontology} (
+\begin{DoxyParamCaption}
+\item[{std\-::string const \&}]{filename}
+\end{DoxyParamCaption}
+)}}\label{classOntology_af40ff2f6c4d2ca5591cee73a4c2f0931}
+
+
+\-Constructor function. \-Reads ontology from a file. 
+
+
+\begin{DoxyParams}{\-Parameters}
+{\em filename} & the name of the file to be loaded \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{\-Member \-Function \-Documentation}
+\hypertarget{classOntology_aa775c431c8aee17a538923729f4c9983}{\index{\-Ontology@{\-Ontology}!\-Add\-Node@{\-Add\-Node}}
+\index{\-Add\-Node@{\-Add\-Node}!Ontology@{\-Ontology}}
+\subsubsection[{\-Add\-Node}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf \-Ontology\-::\-Add\-Node} (
+\begin{DoxyParamCaption}
+\item[{string}]{n\-\_\-name, }
+\item[{int}]{n\-\_\-id}
+\end{DoxyParamCaption}
+)}}\label{classOntology_aa775c431c8aee17a538923729f4c9983}
+
+
+\-Add a node to the ontology with name and id. \-Creates the node from the information. 
+
+
+\begin{DoxyParams}{\-Parameters}
+{\em n\-\_\-name} & the name of the node to add \\
+\hline
+{\em n\-\_\-id} & the id of the node to add \\
+\hline
+\end{DoxyParams}
+\hypertarget{classOntology_a5fadbf06a51d3aff595bcebde5dcca87}{\index{\-Ontology@{\-Ontology}!\-Add\-Node@{\-Add\-Node}}
+\index{\-Add\-Node@{\-Add\-Node}!Ontology@{\-Ontology}}
+\subsubsection[{\-Add\-Node}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf \-Ontology\-::\-Add\-Node} (
+\begin{DoxyParamCaption}
+\item[{{\bf \-Node}}]{new\-\_\-node}
+\end{DoxyParamCaption}
+)}}\label{classOntology_a5fadbf06a51d3aff595bcebde5dcca87}
+
+
+\-Add a node to the ontology. 
+
+
+\begin{DoxyParams}{\-Parameters}
+{\em new\-\_\-node} & the node to be added \\
+\hline
+\end{DoxyParams}
+\hypertarget{classOntology_a575da03cda7e74cc55c4eea805e72436}{\index{\-Ontology@{\-Ontology}!list\-Interface\-Attributes@{list\-Interface\-Attributes}}
+\index{list\-Interface\-Attributes@{list\-Interface\-Attributes}!Ontology@{\-Ontology}}
+\subsubsection[{list\-Interface\-Attributes}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf \-Ontology\-::list\-Interface\-Attributes} (
+\begin{DoxyParamCaption}
+\item[{queue$<$ int $>$}]{modalities}
+\end{DoxyParamCaption}
+)}}\label{classOntology_a575da03cda7e74cc55c4eea805e72436}
+
+
+\-Search through the ontology starting at 'start\-\_\-id' and list out the attributes. 
+
+
+\begin{DoxyParams}{\-Parameters}
+{\em modalities} & \-The list of modalities in the currently selected interface \\
+\hline
+\end{DoxyParams}
+\hypertarget{classOntology_a932660c50241f6016a0d3c4b2d1dc28f}{\index{\-Ontology@{\-Ontology}!print\-Dot\-File@{print\-Dot\-File}}
+\index{print\-Dot\-File@{print\-Dot\-File}!Ontology@{\-Ontology}}
+\subsubsection[{print\-Dot\-File}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf \-Ontology\-::print\-Dot\-File} (
+\begin{DoxyParamCaption}
+\item[{string}]{filename}
+\end{DoxyParamCaption}
+)}}\label{classOntology_a932660c50241f6016a0d3c4b2d1dc28f}
+
+
+print the ontology as a dot graphic file format 
+
+
+\begin{DoxyParams}{\-Parameters}
+{\em filename} & \-The name of dot file to output \\
+\hline
+\end{DoxyParams}
+
+
+\-The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+ontology.\-h\item 
+ontology.\-cpp\end{DoxyCompactItemize}

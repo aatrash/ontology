@@ -1,0 +1,6 @@
+id:0;name:robot
+id:1;name:operator;has:4
+id:2;name:environment
+id:3;name:requirements
+id:4;name:mouse;providesResource:5
+id:5;name:analogInput
